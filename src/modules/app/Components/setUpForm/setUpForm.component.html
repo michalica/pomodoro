@@ -1,0 +1,49 @@
+
+<mat-card class="example-card">
+
+  <mat-form-field>
+    <mat-label>  What do u wanna work on?
+    </mat-label>
+    <input type="text" matInput [formControl]="task">
+  </mat-form-field>
+
+  <br>
+
+  <mat-form-field>
+    <mat-label>   How many cycles ur pomodoro has? (e.g. 4)
+
+    </mat-label>
+    <input type="number" matInput [formControl]="numberOfCycles">
+  </mat-form-field>
+  <br>
+
+
+  <mat-form-field>
+    <mat-label>     What is Your desired pomodoro Time - per cycle? (e.g. 20 minutes)
+
+
+    </mat-label>
+    <input type="number" matInput [formControl]="cycleTime">
+  </mat-form-field>
+
+  <br>
+  <mat-form-field>
+    <mat-label>  What is the length of ur short break? (e.g. 5 min)
+
+
+    </mat-label>
+    <input type="number" matInput [formControl]="shortBreakTime">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>   What is the length of ur long break? (e.g. 20 min)
+
+
+
+    </mat-label>
+    <input type="number" matInput [formControl]="longBreakTime">
+  </mat-form-field>
+
+  <br>
+  <button type="button" (click)="onSubmit()">submit</button>
+</mat-card>
